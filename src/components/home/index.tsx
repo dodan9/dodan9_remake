@@ -27,4 +27,15 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 
-const FixHeader = styled.div``;
+const FixHeader = styled.div`
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+    margin: 0;
+  }
+`;
