@@ -4,7 +4,7 @@ import { GlobalStyle } from "./styles/global_style";
 
 function App() {
   return (
-    <BrowserRouter basename='/dodan9_remake'>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <GlobalStyle />
       <Routes>
         <Route path='/' element={<Home />} />
