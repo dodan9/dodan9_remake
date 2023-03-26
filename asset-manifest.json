@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/dodan9_remake/static/css/main.e6c13ad2.css",
-    "main.js": "/dodan9_remake/static/js/main.d79aa5cc.js",
+    "main.js": "/dodan9_remake/static/js/main.75346211.js",
+    "static/media/NeoDunggeunmoPro-Regular.woff": "/dodan9_remake/static/media/NeoDunggeunmoPro-Regular.0818c487bcc1cc8938b1.woff",
+    "static/media/NeoDunggeunmoPro-Regular.woff2": "/dodan9_remake/static/media/NeoDunggeunmoPro-Regular.5650872361e96a910bc3.woff2",
     "index.html": "/dodan9_remake/index.html",
-    "main.e6c13ad2.css.map": "/dodan9_remake/static/css/main.e6c13ad2.css.map",
-    "main.d79aa5cc.js.map": "/dodan9_remake/static/js/main.d79aa5cc.js.map"
+    "main.75346211.js.map": "/dodan9_remake/static/js/main.75346211.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.d79aa5cc.js"
+    "static/js/main.75346211.js"
   ]
 }
