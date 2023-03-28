@@ -5,15 +5,16 @@ const Menu = () => {
   return (
     <Container>
       <ul>
-        <Link to='/blackjack/'>
+        <Link to='/blackjack'>
           <MenuContent bg_color='black'>BlackJack</MenuContent>
         </Link>
 
-        <Link to='/pokemon/'>
+        <Link to='/pokemon'>
           <MenuContent bg_color='orange'>Pokemon</MenuContent>
         </Link>
-
-        <MenuContent bg_color='blue'>Menu3</MenuContent>
+        <Link to='/map'>
+          <MenuContent bg_color='blue'>Map</MenuContent>
+        </Link>
         <MenuContent bg_color='yellow'>Menu4</MenuContent>
         <MenuContent bg_color='red'>Menu5</MenuContent>
         <MenuContent bg_color='green'>Menu6</MenuContent>

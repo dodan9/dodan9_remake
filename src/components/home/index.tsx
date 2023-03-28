@@ -1,19 +1,19 @@
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
-import BlackJack from "../blackjack";
-import Pokemon from "../pokemon";
 import Menu from "./menu";
+import Side from "../Navigator/navigator";
 
 const Home = () => {
   return (
     <Container>
       <FixHeader>
-        <h1>Dodan9</h1>
+        <Link to='/'>
+          <h1>Dodan9</h1>
+        </Link>
       </FixHeader>
       <Routes>
         <Route path='/' element={<Menu />} />
-        <Route path='/pokemon' element={<Pokemon />} />
-        <Route path='/blackjack' element={<BlackJack />} />
+        <Route path='/*' element={<Side />} />
       </Routes>
     </Container>
   );

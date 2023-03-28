@@ -6,7 +6,7 @@ import NeoDunggeunmoWoff from "./fonts/NeoDunggeunmoPro-Regular.woff";
 export const GlobalStyle = createGlobalStyle`
     @font-face {
     font-family: "NeoDunggeunmo";
-    src: local('NeoDunggeunmo'), url(${NeoDunggeunmoWoff2}) format("woff2"),
+    src: url(${NeoDunggeunmoWoff2}) format("woff2"),
         url(${NeoDunggeunmoWoff}) format("woff");
     }
     *{
