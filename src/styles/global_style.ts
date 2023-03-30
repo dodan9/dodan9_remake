@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 import { theme } from "./colors";
 import NeoDunggeunmoWoff2 from "./fonts/NeoDunggeunmoPro-Regular.woff2";
 import NeoDunggeunmoWoff from "./fonts/NeoDunggeunmoPro-Regular.woff";
@@ -27,4 +27,22 @@ export const GlobalStyle = createGlobalStyle`
     a:hover{
 
     }
+    ul{
+        padding:0;
+        margin:0;
+        list-style: none;
+    }
+`;
+
+export const Modal = styled.div`
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 `;

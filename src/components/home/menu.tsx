@@ -15,7 +15,7 @@ const Menu = () => {
         <Link to='/map'>
           <MenuContent bg_color='blue'>Map</MenuContent>
         </Link>
-        <MenuContent bg_color='yellow'>Menu4</MenuContent>
+        <MenuContent bg_color='yellow'>SkyHill</MenuContent>
         <MenuContent bg_color='red'>Menu5</MenuContent>
         <MenuContent bg_color='green'>Menu6</MenuContent>
       </ul>
@@ -32,11 +32,9 @@ const Container = styled.div`
   justify-content: center;
   ul {
     margin: 0 auto;
-    padding: 0;
     height: 100%;
     width: 700px;
     display: flex;
-    list-style: none;
     justify-content: center;
     align-items: center;
     align-content: center;
