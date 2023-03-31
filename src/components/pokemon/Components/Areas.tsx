@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import { getLocationApi } from "../api";
-import EncounterModal from "./EncounterModal";
+import EncounterModal, { DoubleBorderBox } from "./EncounterModal";
 
 interface AreasType {
   areas: [{ name: string; url: string }];
@@ -35,7 +35,9 @@ const Areas = () => {
         <ul>
           {areas.areas.map((area) => (
             <div key={area.name}>
-              <Area onClick={() => setIsModalOpen(true)}>{area.name}</Area>
+              <AreaBox>
+                <Area onClick={() => setIsModalOpen(true)}>{area.name}</Area>
+              </AreaBox>
               {isModalOpen && (
                 <EncounterModal
                   url={area.url}
@@ -54,6 +56,9 @@ const Areas = () => {
 
 export default Areas;
 
+const AreaBox = styled(DoubleBorderBox)`
+  width: fit-content;
+`;
 const Area = styled.li`
   &:hover {
     text-decoration: underline;
