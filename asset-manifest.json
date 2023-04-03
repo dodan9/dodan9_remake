@@ -1,12 +1,22 @@
 {
   "files": {
-    "main.js": "/dodan9_remake/static/js/main.75346211.js",
+    "main.js": "/dodan9_remake/static/js/main.2952aefb.js",
+    "static/js/227.38d4b71d.chunk.js": "/dodan9_remake/static/js/227.38d4b71d.chunk.js",
+    "static/js/526.c52fd2cc.chunk.js": "/dodan9_remake/static/js/526.c52fd2cc.chunk.js",
+    "static/js/232.6164a002.chunk.js": "/dodan9_remake/static/js/232.6164a002.chunk.js",
+    "static/js/237.215499df.chunk.js": "/dodan9_remake/static/js/237.215499df.chunk.js",
+    "static/media/sinnoh_background.png": "/dodan9_remake/static/media/sinnoh_background.91a7bca1363fb7006135.png",
     "static/media/NeoDunggeunmoPro-Regular.woff": "/dodan9_remake/static/media/NeoDunggeunmoPro-Regular.0818c487bcc1cc8938b1.woff",
     "static/media/NeoDunggeunmoPro-Regular.woff2": "/dodan9_remake/static/media/NeoDunggeunmoPro-Regular.5650872361e96a910bc3.woff2",
+    "static/media/city_background.png": "/dodan9_remake/static/media/city_background.8442e45133c1162269c6.png",
     "index.html": "/dodan9_remake/index.html",
-    "main.75346211.js.map": "/dodan9_remake/static/js/main.75346211.js.map"
+    "main.2952aefb.js.map": "/dodan9_remake/static/js/main.2952aefb.js.map",
+    "227.38d4b71d.chunk.js.map": "/dodan9_remake/static/js/227.38d4b71d.chunk.js.map",
+    "526.c52fd2cc.chunk.js.map": "/dodan9_remake/static/js/526.c52fd2cc.chunk.js.map",
+    "232.6164a002.chunk.js.map": "/dodan9_remake/static/js/232.6164a002.chunk.js.map",
+    "237.215499df.chunk.js.map": "/dodan9_remake/static/js/237.215499df.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.75346211.js"
+    "static/js/main.2952aefb.js"
   ]
 }
