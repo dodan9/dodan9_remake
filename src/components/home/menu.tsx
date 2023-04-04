@@ -1,9 +1,13 @@
+import Spline from "@splinetool/react-spline";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Menu = () => {
   return (
     <Container>
+      <Robot3D>
+        <Spline scene='https://prod.spline.design/lV5fFHroRIrtzE1Z/scene.splinecode' />
+      </Robot3D>
       <ul>
         <Link to='/blackjack'>
           <MenuContent bg_color='black'>BlackJack</MenuContent>
@@ -58,4 +62,13 @@ const MenuContent = styled.li<{ bg_color: string }>`
     transition: 0.3s;
     background-color: ${(props) => props.bg_color};
   }
+`;
+
+const Robot3D = styled.div`
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  width: 200px;
+  height: 200px;
+  z-index: 1000;
 `;

@@ -2,6 +2,7 @@ import { Link, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import Menu from "./menu";
 import Side from "../Navigator/navigator";
+import Spline from "@splinetool/react-spline";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
           <h1>Dodan9</h1>
         </Link>
       </FixHeader>
+
       <Routes>
         <Route path='/' element={<Menu />} />
         <Route path='/*' element={<Side />} />
