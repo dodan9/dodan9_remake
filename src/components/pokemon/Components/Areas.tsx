@@ -11,7 +11,7 @@ const Areas = () => {
   const { location } = useParams<string>();
   const [areas, setAreas] = useState<AreasType>();
   const [loading, setLoading] = useState<boolean>(true);
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [modalUrl, setModalUrl] = useState<string>("");
 
   const callApi = async () => {
     try {
@@ -36,19 +36,16 @@ const Areas = () => {
           {areas.areas.map((area) => (
             <div key={area.name}>
               <AreaBox>
-                <Area onClick={() => setIsModalOpen(true)}>{area.name}</Area>
+                <Area onClick={() => setModalUrl(area.url)}>{area.name}</Area>
               </AreaBox>
-              {isModalOpen && (
-                <EncounterModal
-                  url={area.url}
-                  closeFunction={() => setIsModalOpen(false)}
-                />
-              )}
             </div>
           ))}
         </ul>
       ) : (
         <div>no pokemons...</div>
+      )}
+      {modalUrl !== "" && (
+        <EncounterModal url={modalUrl} closeFunction={() => setModalUrl("")} />
       )}
     </>
   );
