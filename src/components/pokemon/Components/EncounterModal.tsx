@@ -121,6 +121,9 @@ const EncounterModal = ({ url, closeFunction }: EncounterModalPropsType) => {
       });
       response.data.level = level;
 
+      if (getRandomNumber(101, 0) >= 99) response.data.shiny = true;
+      else response.data.shiny = false;
+
       setPokemonInfo(response.data);
     } catch (e) {
       alert(e);
@@ -152,7 +155,13 @@ const EncounterModal = ({ url, closeFunction }: EncounterModalPropsType) => {
       });
 
       const randomNumber = getRandomNumber(encounter_pokemons.length, 0);
-      const randomLevel = 10;
+      const max_level = encounter_pokemons[randomNumber].version_details.find(
+        (detail) => detail.version.name.includes("platinum")
+      )?.encounter_details[0].max_level as number;
+      const min_level = encounter_pokemons[randomNumber].version_details.find(
+        (detail) => detail.version.name.includes("platinum")
+      )?.encounter_details[0].min_level as number;
+      const randomLevel = getRandomNumber(max_level, min_level);
 
       callPokemonApi(encounter_pokemons[randomNumber].pokemon.url, randomLevel);
     }
@@ -187,12 +196,17 @@ const EncounterModal = ({ url, closeFunction }: EncounterModalPropsType) => {
             <AreaName>{areaInfo.name}</AreaName>
             {pokemonInfo ? (
               <PokemonBox>
-                <PokemonName>{pokemonInfo.name}</PokemonName>
+                <PokemonName shiny={pokemonInfo.shiny}>
+                  <span>{pokemonInfo.name}</span>
+                  <span>lv.{pokemonInfo.level}</span>
+                </PokemonName>
                 <div>
                   <PokemonImg
                     src={
                       pokemonLoading
                         ? require("../Images/monsterball.png")
+                        : pokemonInfo.shiny
+                        ? pokemonInfo.sprites.front_shiny
                         : pokemonInfo.sprites.front_default
                     }
                     onLoad={() => setPokemonLoading(false)}
@@ -277,7 +291,10 @@ const PokemonImg = styled.img`
   width: 100%;
 `;
 
-const PokemonName = styled.div`
+const PokemonName = styled.div<{ shiny: boolean }>`
+  span:first-child {
+    color: ${(props) => (props.shiny ? "red" : "black")};
+  }
   border: 5px double black;
   border-top: 0;
   border-right: 0;
@@ -285,6 +302,9 @@ const PokemonName = styled.div`
   padding: 3px 10px;
   height: fit-content;
   flex: 1;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
 `;
 
 const CommandBox = styled(DoubleBorderBox)`
