@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/dodan9_remake/static/js/main.c474cea4.js",
+    "main.js": "/dodan9_remake/static/js/main.66974754.js",
     "static/js/227.38d4b71d.chunk.js": "/dodan9_remake/static/js/227.38d4b71d.chunk.js",
     "static/js/526.c52fd2cc.chunk.js": "/dodan9_remake/static/js/526.c52fd2cc.chunk.js",
     "static/js/232.6164a002.chunk.js": "/dodan9_remake/static/js/232.6164a002.chunk.js",
@@ -10,13 +10,13 @@
     "static/media/NeoDunggeunmoPro-Regular.woff2": "/dodan9_remake/static/media/NeoDunggeunmoPro-Regular.5650872361e96a910bc3.woff2",
     "static/media/city_background.png": "/dodan9_remake/static/media/city_background.8442e45133c1162269c6.png",
     "index.html": "/dodan9_remake/index.html",
-    "main.c474cea4.js.map": "/dodan9_remake/static/js/main.c474cea4.js.map",
+    "main.66974754.js.map": "/dodan9_remake/static/js/main.66974754.js.map",
     "227.38d4b71d.chunk.js.map": "/dodan9_remake/static/js/227.38d4b71d.chunk.js.map",
     "526.c52fd2cc.chunk.js.map": "/dodan9_remake/static/js/526.c52fd2cc.chunk.js.map",
     "232.6164a002.chunk.js.map": "/dodan9_remake/static/js/232.6164a002.chunk.js.map",
     "237.215499df.chunk.js.map": "/dodan9_remake/static/js/237.215499df.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c474cea4.js"
+    "static/js/main.66974754.js"
   ]
 }
