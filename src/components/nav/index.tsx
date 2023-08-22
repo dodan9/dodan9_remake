@@ -1,10 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import styled from "styled-components";
-import BlackJack from "../Blackjack";
-import Pokemon from "../Pokemon";
-import Map from "../Map";
+import Map from "components/map";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Pokemon from "components/pokemon";
+import BlackJack from "components/blackjack";
+import { menuRoute } from "components/routes/menu_routes";
 
 const Navigator = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -14,10 +15,10 @@ const Navigator = () => {
         {isMenuOpen && (
           <ul>
             <li>
-              <Link to='/blackjack'>Black Jack</Link>
+              <Link to="/blackjack">Black Jack</Link>
             </li>
             <li>
-              <Link to='/pokemon'>Pokemon</Link>
+              <Link to="/pokemon">Pokemon</Link>
             </li>
           </ul>
         )}
@@ -25,11 +26,7 @@ const Navigator = () => {
           {isMenuOpen ? "X" : "menu >"}
         </MenuButton>
       </SideMenu>
-      <Routes>
-        <Route path='/pokemon/*' element={<Pokemon />} />
-        <Route path='/blackjack' element={<BlackJack />} />
-        <Route path='/map' element={<Map />} />
-      </Routes>
+      {menuRoute()}
     </>
   );
 };

@@ -1,8 +1,8 @@
 import axios from "axios";
-import { versions } from "process";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { Modal } from "../../../Styles/global_style";
+import { Modal } from "styles/global";
+import monsterball from "components/pokemon/images/monsterball.png";
 
 interface EncounterModalPropsType {
   url: string;
@@ -204,7 +204,7 @@ const EncounterModal = ({ url, closeFunction }: EncounterModalPropsType) => {
                   <PokemonImg
                     src={
                       pokemonLoading
-                        ? require("../Images/monsterball.png")
+                        ? monsterball
                         : pokemonInfo.shiny
                         ? pokemonInfo.sprites.front_shiny
                         : pokemonInfo.sprites.front_default

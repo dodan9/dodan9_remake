@@ -6,22 +6,26 @@ const Menu = () => {
   return (
     <Container>
       <Robot3D>
-        <Spline scene='https://prod.spline.design/lV5fFHroRIrtzE1Z/scene.splinecode' />
+        <Spline scene="https://prod.spline.design/lV5fFHroRIrtzE1Z/scene.splinecode" />
       </Robot3D>
       <ul>
-        <Link to='/blackjack'>
-          <MenuContent bg_color='black'>BlackJack</MenuContent>
+        <Link to="/blackjack">
+          <MenuContent bg_color="black">BlackJack</MenuContent>
         </Link>
 
-        <Link to='/pokemon'>
-          <MenuContent bg_color='orange'>Pokemon</MenuContent>
+        <Link to="/pokemon">
+          <MenuContent bg_color="orange">Pokemon</MenuContent>
         </Link>
-        <Link to='/map'>
-          <MenuContent bg_color='blue'>Map</MenuContent>
+        <Link to="/map">
+          <MenuContent bg_color="blue">Map</MenuContent>
         </Link>
-        <MenuContent bg_color='yellow'>SkyHill</MenuContent>
-        <MenuContent bg_color='red'>Menu5</MenuContent>
-        <MenuContent bg_color='green'>Menu6</MenuContent>
+        <MenuContent bg_color="yellow">SkyHill</MenuContent>
+
+        <Link to={"minesweeper"}>
+          <MenuContent bg_color="red">minesweeper</MenuContent>
+        </Link>
+
+        <MenuContent bg_color="green">Menu6</MenuContent>
       </ul>
     </Container>
   );

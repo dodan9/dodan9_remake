@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-import { theme } from "./colors";
+import { theme } from "styles/colors";
 import NeoDunggeunmoWoff2 from "./fonts/NeoDunggeunmoPro-Regular.woff2";
 import NeoDunggeunmoWoff from "./fonts/NeoDunggeunmoPro-Regular.woff";
 

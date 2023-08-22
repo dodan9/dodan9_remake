@@ -48,7 +48,7 @@ const Locations = () => {
     )
       symbol = "coin";
 
-    return require(`../Images/${symbol}.png`);
+    return require(`../images/${symbol}.png`);
   };
 
   useEffect(() => {
@@ -68,7 +68,7 @@ const Locations = () => {
                   <Location>
                     <img
                       src={getLocationSymbol(location.name)}
-                      alt='symbol img'
+                      alt="symbol img"
                     ></img>
                     {location.name}
                   </Location>
@@ -83,7 +83,7 @@ const Locations = () => {
 
 export default Locations;
 
-const sinnoh_background = require("../Images/sinnoh_background.png");
+const sinnoh_background = require("../images/sinnoh_background.png");
 
 const SinnohTitle = styled.h1`
   margin: 0;
